@@ -9,7 +9,7 @@
 
 <body>
 
-    <svg viewBox="0 0 100 100">
+    <svg viewBox="0 0 120 120">
 
         <!-- <path stroke="grey" stroke-width=".1" d="M10 0 V100" />
         <path stroke="grey" stroke-width=".1" d="M20 0 V100" />
@@ -34,13 +34,15 @@
         <!-------------------Main circle------------>
         <circle cx="50" cy="50" r="17" stroke="orange" stroke-width=".3" fill="orange" opacity=".9" />
         <!----------------------Eyes---------------->
-        <ellipse cx="45" cy="45" rx="3" ry="4" fill="white" />
-        <ellipse cx="55" cy="45" rx="3" ry="4" fill="white" />
+        <ellipse cx="45" cy="45" rx="3" ry="4" fill="white" stroke="black" stroke-width=".6" />
+        <ellipse cx="55" cy="45" rx="3" ry="4" fill="white" stroke="black" stroke-width=".6" />
         <!---------------------Pupils---------------->
-        <circle cx="46" cy="47" r="1" fill="green" />
-        <circle cx="54" cy="47" r="1" fill="green" />
+        <circle cx="46" cy="47" r="1" fill="green" stroke="black" stroke-width=".6" />
+        <circle cx="54" cy="47" r="1" fill="green" stroke="black" stroke-width=".6" />
+        <!----------------------Nose---------------->
+        <line x1="50" y1="50" x2="57" y2="60" stroke="black" stroke-width=".3" fill="transparent" />
         <!---------------------Mouth---------------->
-        <path d="M20 50 Q30 30, 40 50 T60 50, 80 50" stroke="brown" stroke-width=".5" fill="transparent" />
+        <path d="M 40 55 C 70 70, 50 50, 60 55" stroke="brown" stroke-width=".3" fill="transparent" />
 
     </svg>
 
