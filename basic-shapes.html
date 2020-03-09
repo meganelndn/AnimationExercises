@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG Shapes</title>
+    <link rel="stylesheet" href="basic-shapes.css">
 </head>
 
 <body>
     <h1>Basics SVG</h1>
 
     <svg width="200" height="250" viewBox="0 0 200 250">
+        <g>
+            <rect x="10" y="10" width="30" height="30" />
 
-        <rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="3" />
+            <circle cx="90" cy="25" r="20" />
 
-        <circle cx="90" cy="25" r="20" stroke="pink" fill="transparent" stroke-width="3" />
+            <!-- <line x1="60" x2="10" y1="60" y2="10" stroke="green" stroke-width="3" /> -->
 
-        <!-- <line x1="60" x2="10" y1="60" y2="10" stroke="green" stroke-width="3" /> -->
+            <ellipse cx="25" cy="75" rx="20" ry="5" />
 
-        <ellipse cx="25" cy="75" rx="20" ry="5" fill="transparent" stroke="brown" stroke-width="3" />
+            <polyline points="10 10, 90 25, 25 75, 20" />
+            <polygon points="10 10, 90 25, 25 75, 20" />
 
-        <polyline points="10 10, 90 25, 25 75, 20" fill="transparent" stroke="black" stroke-width="1" />
-        <polygon points="10 10, 90 25, 25 75, 20" fill="transparent" stroke="black" stroke-width="1" />
-
-        <!-- <path d="M 10 10 H 130 V 130 L 10 10" fill="none" stroke="darkblue" stroke-width="2" /> -->
-
+            <path d="M 10 10 H 130 V 130 L 10 10" />
+        </g>
     </svg>
 </body>
 
