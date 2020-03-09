@@ -1,0 +1,31 @@
+g {
+    stroke: darkolivegreen;
+    fill: transparent;
+    stroke-width: 1;
+}
+
+g>rect {
+    fill: pink;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 15%;
+    }
+
+    to {
+        margin-left 0%;
+        width: 60%;
+    }
+}
+
+/* g>rect {
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    transform: rotate(30deg);
+} */
