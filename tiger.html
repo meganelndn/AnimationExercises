@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiger to Panther</title>
+</head>
+
+<body>
+    <section>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", init);
+
+        async function init() {
+            let response = await fetch("tiger.svg");
+            let mySvgData = await response.text();
+            document.querySelector("section").innerHTML = mySvgData;
+
+            startManipulatingSvg();
+        }
+
+        function startManipulatingSvg() {
+            document.querySelector("section").addEventListener("click", eyesToRed);
+            document.querySelector("g:hover").addEventListener("mouseover", skinToBlack);
+        }
+
+        function eyesToRed() {
+            document.querySelector("#path304").style.fill = "red";
+            document.querySelector("#path308").style.fill = "red";
+            document.querySelector("#path352").style.fill = "red";
+            document.querySelector("#path476").style.fill = "red";
+        }
+
+        function skinToBlack() {
+
+        }
+    </script>
+
+</body>
+
+</html>
