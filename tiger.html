@@ -24,7 +24,7 @@
 
         function startManipulatingSvg() {
             document.querySelector("section").addEventListener("click", eyesToRed);
-            document.querySelector("g:hover").addEventListener("mouseover", skinToBlack);
+            document.querySelector("section").addEventListener("mouseover", skinToBlack);
         }
 
         function eyesToRed() {
@@ -35,7 +35,7 @@
         }
 
         function skinToBlack() {
-
+            document.querySelectorAll("g").style.fill = "black";
         }
     </script>
 
