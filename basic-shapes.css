@@ -17,7 +17,7 @@ g>rect {
     }
 
     to {
-        margin-left 0%;
+        margin-left: 0;
         width: 60%;
     }
 }
