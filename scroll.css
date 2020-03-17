@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+}
+
+body {
+    overscroll-behavior: none;
+}
+
+main {
+    display: grid;
+}
+
+.the_container {
+    height: calc(100vh);
+    font-size: 100px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    perspective: 2px;
+}
+
+#slower {
+    position: absolute;
+    transform: translateZ(-1px) scale(1.5);
+    color: yellow;
+    font-size: 36px;
+    background-color: black;
+}
+
+#faster {
+    position: absolute;
+    transform: translateZ(1px) translateX(300px) scale(1.5);
+    color: yellow;
+    font-size: 36px;
+    background-color: black;
+}
+
+#section_1 {
+    background-color: indianred;
+    color: white;
+}
+
+#section_2 {
+    background-color: plum;
+    color: white;
+}
+
+#section_3 {
+    background-color: peru;
+    color: white;
+}
+
+#section_4 {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#section_5 {
+    background-color: olive;
+    color: white;
+}
+
+nav {
+    position: fixed;
+}
